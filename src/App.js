@@ -6,9 +6,9 @@ import Navbar from './components/Navbar'
 
 // import pages
 import Home from './pages/Home'
-import Contact from './pages/Contact'
 import Projects from './pages/Projects'
 import Photography from './pages/Photography'
+import Blog from './pages/Blog'
 
 function App() {
   return (
@@ -17,9 +17,9 @@ function App() {
 				<Navbar />
 				<Switch>
 					<Route path='/' exact component={Home} />
-					<Route path='/contact' exact component={Contact} />
 					<Route path='/projects' exact component={Projects} />
 					<Route path='/photography' exact component={Photography} />
+					<Route path='/blog' exact component={Blog} />
 				</Switch>
 			</Router>
 		</div>

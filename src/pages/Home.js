@@ -1,16 +1,10 @@
 import React from 'react'
+import ContactBar from '../components/ContactBar'
 
 const Home = () => {
 	return (
-		<div
-			style={{
-				fontSize: '2rem',
-				display: 'flex',
-				justifyContent: 'left',
-				marginTop: '2rem',
-			}}
-		>
-			Home Page
+		<div>
+			<ContactBar />	
 		</div>
 	)
 } 

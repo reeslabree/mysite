@@ -1,7 +1,7 @@
 .navbar {
 	height: 80px;
 	width: 100%;
-	background: #fbcd85;
+	background: #FBCD85;
 	color: white;
 	display: flex;
 	justify-content: space-between;
@@ -12,26 +12,34 @@
 
 .nav-logo {
 	text-decoration: none;
-	color: #3a2d28;
+	color: #151e3f;
 	font-size: 35px;
 	font-weight: bolder;
 }
 
 .nav-links {
 	display: grid;
-	grid-template-columns: repeat(5, auto);
-	grid-gap: 20px;
+	grid-template-columns: repeat(3, auto);
+	grid-gap: 35px;
 	list-style: none;
 }
 
 .nav-link {
 	text-decoration: none;
-	color: #3a2d28;
+	color: #ffffff;
 	transition: 0.3s all;
+	background-color: #151e3f;
+	padding: 8px;
+	border-radius: 5px;	
+	font-size: 20px;
+	display: flex;
+	align-items: center;
 }
 
 .nav-link:hover {
-	color: #7ca5b8;
+	color: #151e3f;
+	background-color: #e5e5e5;
+	transition: .2s;
 }
 
 .nav-icon {
