@@ -1,10 +1,16 @@
 import React from 'react'
 import ContactBar from '../components/ContactBar'
+import Profile from '../components/Profile'
 
 const Home = () => {
 	return (
 		<div>
-			<ContactBar />	
+			<div>
+				<Profile />	
+			</div>
+			<div style={{clear:'both'}}>
+				<ContactBar />
+			</div>
 		</div>
 	)
 } 

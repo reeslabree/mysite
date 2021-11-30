@@ -1,0 +1,25 @@
+.container {
+	padding: 5%;
+	display: flex;
+	align-items: center;
+}
+
+.portrait {
+	width: 30%;
+	height: auto;
+	margin-right: 5%;
+	margin-left: 15%;
+	border-radius: 10px;
+}
+
+.text-typing-primary {
+	color: white;
+	font-weight: bolder;
+	font-size: 10vw;
+	padding-top: 2vw;
+}
+
+.text-secondary {
+	color: white;
+	font-size: 25px;
+}
