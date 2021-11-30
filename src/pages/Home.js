@@ -8,9 +8,6 @@ const Home = () => {
 			<div>
 				<Profile />	
 			</div>
-			<div style={{clear:'both'}}>
-				<ContactBar />
-			</div>
 		</div>
 	)
 } 

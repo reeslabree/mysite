@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 // import components
 import Navbar from './components/Navbar'
+import ContactBar from './components/ContactBar';
 
 // import pages
 import Home from './pages/Home'
@@ -22,6 +23,7 @@ function App() {
 					<Route path='/blog' exact element={<Blog />} />
 				</Routes>
 			</Router>
+			<ContactBar />
 		</div>
 	);
 }
