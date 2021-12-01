@@ -2,7 +2,7 @@
 	height: 80px;
 	width: 100%;
 	background: #FBCD85;
-	color: white;
+	color: #151e3f;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -60,14 +60,18 @@
 		position: absolute;
 		text-align: center;
 		width: 100%;
-		margin-top: 60%;
+		top: 80px;
 		left: -100%;
 		transition: 0.2s all;
 	}
 
 	.nav-links.active {
 		background: #151e3f;
-		left: 0;
+		left: 2%;
+		padding-top: 3%;
+		padding-right: 5%;
+		padding-left: 3%;
+		padding-bottom: 3%;
 	}
 
 	.nav-icon {

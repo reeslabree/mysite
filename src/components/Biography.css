@@ -1,0 +1,27 @@
+.bio-block {
+	padding-bottom: 2%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.inline-icon {
+	font-size: 22px;
+	padding-right: 4px;
+}
+
+.primary-text {
+	font-size: 30px;
+	color: white;
+	
+}
+
+.secondary-text {
+	padding: 18px;
+	font-size: 17px;
+	color: white;
+}
+
+.secondary-text a {
+	color: #fbcd85;
+	text-decoration: none;
+}
