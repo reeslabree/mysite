@@ -5,18 +5,19 @@
 }
 
 .portrait {
-	width: 30%;
+	width: 15%;
 	height: auto;
 	margin-right: 5%;
-	margin-left: 15%;
-	border-radius: 10px;
+	margin-left: 32.5%;
+	border-radius: 25px;
 }
 
 .text-typing-primary {
 	color: white;
 	font-weight: bolder;
-	font-size: 10vw;
+	font-size: 5vw;
 	padding-top: 2vw;
+	text-align: left;
 }
 
 .text-secondary {

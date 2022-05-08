@@ -1,8 +1,8 @@
 .navbar {
 	height: 80px;
 	width: 100%;
-	background: #FBCD85;
-	color: #151e3f;
+	background: #F3EAC0;
+	color: #1E2640;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -12,7 +12,7 @@
 
 .nav-logo {
 	text-decoration: none;
-	color: #151e3f;
+	color: #1E2640;
 	font-size: 35px;
 	font-weight: bolder;
 }
@@ -26,9 +26,9 @@
 
 .nav-link {
 	text-decoration: none;
-	color: #ffffff;
+	color: #1E2640;
 	transition: 0.3s all;
-	background-color: #151e3f;
+	background-color: #F3EAC0;
 	padding: 8px;
 	border-radius: 5px;	
 	font-size: 25px;
@@ -37,8 +37,8 @@
 }
 
 .nav-link:hover {
-	color: #151e3f;
-	background-color: #e5e5e5;
+	color: #F3EAC0;
+	background-color: #1E2640;
 	transition: .2s;
 }
 
@@ -66,7 +66,7 @@
 	}
 
 	.nav-links.active {
-		background: #151e3f;
+		background: #1E2640;
 		left: 2%;
 		padding-top: 3%;
 		padding-right: 5%;
