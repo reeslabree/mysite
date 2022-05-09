@@ -1,0 +1,34 @@
+.post-container {
+    background: #F3EAC0;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    margin: 0 2%;
+    border-radius: 25px;
+    width: 30vw;
+    margin-top: 5%;
+}
+.heading {
+    /* height: 25px; */
+    text-align: left;
+    display: flex;
+    align-items: center;
+    color: #1E2640;
+}
+.content {
+    color: #1E2640;
+    font-size: 20px;
+    text-align: left;
+}
+.date {
+    font-size: 25px;
+    color: #1E2640;
+    text-align: left;
+}
+.image {
+    width: 25vw;
+    height: 25vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}

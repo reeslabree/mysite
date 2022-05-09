@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { FiMenu, FiX } from 'react-icons/fi'
 import { AiFillCode, AiFillCamera } from 'react-icons/ai'
 import { BsFillPenFill } from 'react-icons/bs'
-import './Navbar.css'
+import './style/Navbar.css'
 
 const Navbar = () => {
 	const [open, setOpen] = useState(false)

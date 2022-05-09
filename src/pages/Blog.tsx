@@ -1,4 +1,5 @@
 import React from 'react'
+import PostItem from '../components/Posts';
 
 const Blog = () => {
 	return (
@@ -10,7 +11,7 @@ const Blog = () => {
 				marginTop: '2rem',
 			}}
 		>
-			Under Construction
+			<PostItem />
 		</div>
 	)
 } 

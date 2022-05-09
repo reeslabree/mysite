@@ -1,7 +1,7 @@
 import React from 'react'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { Button } from 'react-bootstrap'
-import './ContactBar.css'
+import './style/ContactBar.css'
 
 const ContactBar = () => {
 	return (
