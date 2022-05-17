@@ -1,4 +1,48 @@
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    background-color: #F3EAC0;
+    border-radius: 25px;
+    margin-top: 5px;
+    width: 30vw;
+    color: #1E2640;
+    padding: 3%;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 20px;
+    width: fit-content;
+}
+
+.tech-container {
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.scope-item {
+    background-color: #922C40;
+    margin-right: 3px;
+    padding: 3px 8px;
+    height: max-content;
+    border-radius: 8px;
+    color: rgb(232, 231, 231);
+    transition: .2s;
+    width:fit-content;
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+    flex: 1;
+    font-size: 17px;
+}
+
+.scope-item:hover {
+    transition: .2s;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 80vw;
+    }
 }

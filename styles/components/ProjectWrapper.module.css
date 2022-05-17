@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    align-items: center;
+    position: relative;
+    padding-top: 1%;
+    left: 50%;
+    transform: translate(-50%, -2%);
+    grid-template-columns: 1;
+}
