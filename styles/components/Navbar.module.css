@@ -19,7 +19,7 @@
 
 .nav_links {
 	display: grid;
-	grid-template-columns: repeat(2, auto);
+	grid-template-columns: repeat(3, auto);
 	grid-gap: 35px;
 	list-style: none;
 }
