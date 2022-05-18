@@ -40,7 +40,7 @@ const ProjectWrapper = () => {
       scope: [`Arduino`],
       description: `Over the first few months of the Covid lockdowns, I discovered the game CloneHero, an open source build of Guitar Hero for PC. I enjoyed playing it on my computer using the keyboard, but naturally I felt like I needed to have a native guitar hero controller to really enjoy it.\n
       There was one main problem, however, that guitars built for the PC were expensive and rare to find. On the other hand, Goodwill was selling PS3 wireless guitars for only a couple bucks, and Amazon sold Arduino Leonardos at 3 for $10.\n
-      One day I'll try to throw up my circuit diagram and code snippet (although the code for turning a button press into a game controller event isn't particularly complicated). For now, I'll leave this project summary be, and spend a some time mastering the Van Halen's Panama guitar solo on expert mode.`,
+      One day I'll try to throw up my circuit diagram and code snippet (although the code for turning a button press into a game controller event isn't particularly complicated). For now, I'll leave this project summary be, and spend some time mastering the Van Halen's Panama guitar solo on expert mode.`,
       images: [
         `https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimgs.ee-paper.com%2Fimgs%2Fo4YBAF5l3iWAXmD8AAB01vhS9Ec705.jpg&f=1&nofb=1`,
         `https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flabinapp.com%2Fwp-content%2Fuploads%2F2019%2F09%2FCBS101203_CircuitDiagram.png&f=1&nofb=1`,

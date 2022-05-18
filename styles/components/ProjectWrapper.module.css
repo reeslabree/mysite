@@ -9,4 +9,5 @@
     left: 50%;
     transform: translate(-50%, -2%);
     grid-template-columns: 1;
+    width: 10vw;
 }
