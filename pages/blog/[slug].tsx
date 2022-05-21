@@ -7,6 +7,7 @@ import Link from "next/link";
 import { FaChevronLeft } from "react-icons/fa";
 import { GetStaticPaths, GetStaticProps } from "next";
 import styles from "../../styles/pages/Post.module.css";
+import { NextSeo } from "next-seo";
 
 type PostPageParams = {
   frontmatter: {
@@ -25,6 +26,10 @@ const PostPage: React.FC<PostPageParams> = ({
 }) => {
   console.log(image);
   return (
+    <>
+    <NextSeo 
+      title='reeslabree.com | Blog'
+    />
     <div className={styles.container}>
       <img
         src={image}
@@ -44,6 +49,7 @@ const PostPage: React.FC<PostPageParams> = ({
         ></div>
       </div>
     </div>
+    </>
   );
 };
 export default PostPage;

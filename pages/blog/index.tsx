@@ -4,9 +4,14 @@ import { GetStaticProps } from "next";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { NextSeo } from "next-seo";
 
 const Blog: React.FC<PostsParams[]> = (posts) => {
   return (
+    <>
+    <NextSeo 
+      title='reeslabree.com | Blog'
+    />
     <div
       style={{
         fontSize: "2rem",
@@ -17,6 +22,7 @@ const Blog: React.FC<PostsParams[]> = (posts) => {
     >
       <Posts { ... posts } />
     </div>
+    </>
   );
 };
 export default Blog;

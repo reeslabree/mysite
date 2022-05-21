@@ -7,10 +7,14 @@ import Navbar from "../components/Navbar";
 import ContactBar from "../components/ContactBar";
 import Profile from "../components/Profile";
 import Biography from "../components/Biography";
+import { NextSeo } from "next-seo";
 
 const Home: NextPage = () => {
   return (
     <div>
+      <NextSeo 
+        title='reeslabree.com'
+      />
       <div>
         <Profile />
       </div>
