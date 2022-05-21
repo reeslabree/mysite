@@ -16,6 +16,10 @@
     width: fit-content;
 }
 
+.chevron {
+    padding-top: 3px;
+}
+
 .tech-container {
     margin-top: -10px;
     margin-bottom: -10px;
@@ -35,6 +39,10 @@
     align-content: center;
     flex: 1;
     font-size: 17px;
+}
+
+.description-close {
+    display: none;
 }
 
 .scope-item:hover {

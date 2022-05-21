@@ -1,6 +1,7 @@
 import React from "react";
 import TechIcon from "./TechIcon";
 import styles from "../styles/components/ProjectCard.module.css";
+import { HiChevronDoubleDown, HiChevronDoubleUp } from "react-icons/hi";
 
 type ProjectProps = {
   post: {
@@ -18,35 +19,54 @@ const ProjectCard: React.FC<ProjectProps> = ({
   post: { title, short, scope, url, description, images },
   index,
 }) => {
-  return (
-    <a href={url}>
-      <div className={styles.container}>
-        <span className={styles.title}>{title}</span>
-        <span className={styles.subtitle}>{short}</span>
-        <br />
-        <div className={styles["tech-container"]}>
-          {scope.map((tech) => {
-            return (
-              <div className={styles["scope-item"]}>
-                <TechIcon iconId={tech} />
-              </div>
-            );
-          })}
-        </div>
-        <br />
+  const [open, setOpen] = React.useState(false);
 
-        <span className={styles.description}>
-          {description.split("\n").map((value, index) => {
-            return (
-              <span key={index}>
-                {value}
-                <br />
-              </span>
-            );
-          })}
-        </span>
+  const handleClick = () => {
+    setOpen(!open);
+  };
+
+  return (
+    <div className={styles.container}>
+      <span className={styles.title}>
+        {open ? (
+          <HiChevronDoubleUp className={styles.chevron} onClick={handleClick} />
+        ) : (
+          <HiChevronDoubleDown
+            className={styles.chevron}
+            onClick={handleClick}
+          />
+        )}
+        <a href={url}>{title} </a>
+      </span>
+
+      <span className={styles.subtitle}>{short}</span>
+      <br />
+      <div className={styles["tech-container"]}>
+        {scope.map((tech) => {
+          return (
+            <div className={styles["scope-item"]}>
+              <TechIcon iconId={tech} />
+            </div>
+          );
+        })}
       </div>
-    </a>
+      <br />
+
+      <span
+        className={
+          open ? styles["description-open"] : styles["description-close"]
+        }
+      >
+        {description.split("\n").map((value, index) => {
+          return (
+            <span key={index}>
+              {value}
+              <br />
+            </span>
+          );
+        })}
+      </span>
+    </div>
   );
 };
 export default ProjectCard;

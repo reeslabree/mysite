@@ -5,9 +5,9 @@
     display: grid;
     align-items: center;
     position: relative;
-    padding-top: 1%;
+    padding-top: 0px;
     left: 50%;
-    transform: translate(-50%, -2%);
+    transform: translate(-50%, 0%);
     grid-template-columns: 1;
     width: 10vw;
 }
