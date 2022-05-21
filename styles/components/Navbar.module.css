@@ -54,6 +54,13 @@
 		position: relative;
 	}
 
+	.nav_logo {
+		text-decoration: none;
+		color: #1E2640;
+		font-size: 25px;
+		font-weight: bolder;
+	}
+
 	.nav_links {
 		display: flex;
 		flex-direction: column;
