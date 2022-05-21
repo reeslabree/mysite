@@ -21,6 +21,22 @@
     color: #DC9750;
 }
 
+.container code {
+    background-color: #F3EAC0;
+    color: #922C40;
+    /* padding: 3px; */
+    border-radius: 3px ;
+    font-size: 15px;
+}
+
+.container pre {
+    background-color: #F3EAC0;
+    color: #922C40;
+    padding: 3px;
+    border-radius: 3px ;
+    font-size: 15px;
+}
+
 /* .container h3 {
     background-color: #F3EAC0;
     color: #922C40;

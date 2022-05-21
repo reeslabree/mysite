@@ -1,36 +1,37 @@
 import React from "react";
-import styles from '../styles/components/Posts.module.css'
-import PostBox from './PostBox'
+import styles from "../styles/components/Posts.module.css";
+import PostBox from "./PostBox";
 
-const Posts = () => {
-  const blogPosts = [
-    {
-      'title': `A Post-Mortem on PuPPY`,
-      'date': `May 8, 2022`,
-      'content': `Insights gained while working on a pay-per-use platform built on the Ethereum blockchain`,
-      'imgUrl': `https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.iheartteacups.com%2Fwp-content%2Fuploads%2F2016%2F03%2FIMG_49861.jpg&f=1&nofb=1`
-    },
-    {
-      'title': `How do Solana NFT's work?`,
-      'date': `May 1, 2022`,
-      'content': `A technical analysis of Solana NFT's, completed for CSCI5240 - Introduction to Blockchain`,
-      'imgUrl': `https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.squarespace-cdn.com%2Fcontent%2Fv1%2F53a1a597e4b017ac5c2c7f48%2F1625468272323-UL58RRTNDO4X57Z57UPN%2Fgang.jpg&f=1&nofb=1`
-    },
-    {
-      'title': `Dealing with Illegal Content on the Blockchain`,
-      'date': `March 27, 2022`,
-      'content': `What can be done about unsavory content stored on an immutable ledger? Completed for CSCI5240 - Introduction to Blockchain`,
-      'imgUrl': `https://www.boostit.net/wp-content/uploads/2017/09/824915.jpg`
-    }
-  ]
+type Post = {
+    title: string, 
+    date: string, 
+    excerpt: string, 
+    image: string,
+    index: number,
+};
 
+type PostsParams = {
+  slug: string,
+  frontmatter: {
+    title: string, 
+    date: string, 
+    excerpt: string, 
+    image: string,
+    index: number,
+  }
+}
+
+const Posts: React.FC<PostsParams[]>= (props) => {
+  console.log(props)
+  //@ts-ignore
+  const posts = props.posts as PostsParams[]
+  console.log(posts)
   return (
     <div className={styles["posts-container"]}>
-      {blogPosts.map((post, index) => (
-        <PostBox key={index} index={index} post={post}></PostBox>
+      {posts.map(({frontmatter, slug}, index) => (
+        <PostBox key={index} index={index} slug= {slug} post={frontmatter}></PostBox>
       ))}
     </div>
   );
 };
-
 export default Posts;
