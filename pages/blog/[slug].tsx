@@ -27,28 +27,29 @@ const PostPage: React.FC<PostPageParams> = ({
   console.log(image);
   return (
     <>
-    <NextSeo 
-      title='reeslabree.com | Blog'
-    />
-    <div className={styles.container}>
-      <img
-        src={image}
-        className={styles.image}
-        alt="The cover image for this article."
-      />
+      <NextSeo title="reeslabree.com | Blog" />
 
-      <div className={styles.header}>
-        <h1 className="post-title">{title}</h1>
-        <p className="post-date">Posted on {date}</p>
-      </div>
+      <div className={styles.container}>
+        <div className={styles["post-container"]}>
+          <img
+            src={image}
+            className={styles.image}
+            alt="The cover image for this article."
+          />
 
-      <div className={styles["post-body"]}>
-        <div
-          className="image"
-          dangerouslySetInnerHTML={{ __html: marked.parse(content) }}
-        ></div>
+          <div className={styles.header}>
+            <h1 className="post-title">{title}</h1>
+            <p className="post-date">Posted on {date}</p>
+          </div>
+
+          <div className={styles["post-body"]}>
+            <div
+              className="image"
+              dangerouslySetInnerHTML={{ __html: marked.parse(content) }}
+            ></div>
+          </div>
+        </div>
       </div>
-    </div>
     </>
   );
 };

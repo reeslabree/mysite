@@ -60,6 +60,8 @@ export const getStaticProps: GetStaticProps = async () => {
     } as unknown as PostsParams;
   });
 
+  // sort the posts by index
+  posts.sort((a, b) => b.frontmatter.index - a.frontmatter.index)
 
   return {
     props: {
